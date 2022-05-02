@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% include "partials/metadata.njk" %}
+    <title>{{ title }} &bull; {{ lang[locale].site_name }} </title>
+    {% block styles %}
+    <link rel="preload" as="style" href="/assets/css/reset.css" onload="this.rel='stylesheet'"  />
+    <link rel="preload" as="style" href="/assets/css/global.css" onload="this.rel='stylesheet'"  />
+    {% endblock %}
+</head>
+<body>
+
+    {% block header %}
+    <header>
+        <nav>
+            <ul>
+                {% for link in lang[locale].top_menu %}
+                    <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+
+        </nav>
+    </header>
+    {% endblock %}
+
+    <main>
+{{ content | safe }}
+    </main>
+    
+{% include "partials/footer.njk" %}
+
+    {% block scripts %}
+    <script src="/assets/js/global.js" defer></script>
+    <script src="/assets/js/alpine.min.js" defer></script>
+    {% endblock %}
+
+</body>
+</html>

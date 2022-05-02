@@ -1,0 +1,19 @@
+{
+    "en": {
+        "site_name": "My site",
+        "site_desc": [
+            "<p>This is the description</p>",
+            "<p class=\"demo\">Line 2</p>"
+        ],
+        "top_menu": [
+            {
+                "text": "Home",
+                "url": "/"
+            },
+            {
+                "text": "About",
+                "url": "/about/"
+            }
+        ]
+    }
+}
