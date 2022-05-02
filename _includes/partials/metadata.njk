@@ -1,7 +1,11 @@
 
     <meta name="description" content="{{ open_graph.description }}" />
     <meta name="author" content="{{ author }}" />
+    {% if site.index %}
     <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    {% else %}
+    <meta name="robots" content="noindex" />
+    {%endif %}
     <link rel="canonical" href="{{ site.domain }}{{ path }}" />
 
     <meta property="og:type" content="website" />
