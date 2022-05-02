@@ -6,8 +6,8 @@
 {% include "partials/metadata.njk" %}
     <title>{{ title }} &bull; {{ lang[locale].site_name }} </title>
     {% block styles %}
-    <link rel="preload" as="style" href="../assets/css/reset.css" onload="this.rel='stylesheet'"  />
-    <link rel="preload" as="style" href="../assets/css/global.css" onload="this.rel='stylesheet'"  />
+    <link rel="preload" as="style" href="{{ site.domain }}/assets/css/reset.css" onload="this.rel='stylesheet'"  />
+    <link rel="preload" as="style" href="{{ site.domain }}/assets/css/global.css" onload="this.rel='stylesheet'"  />
     <base href="{{ site.domain }}/" />
     {% endblock %}
 </head>
@@ -32,8 +32,8 @@
 {% include "partials/footer.njk" %}
 
     {% block scripts %}
-    <script src="./assets/js/global.js" defer></script>
-    <script src="./assets/js/alpine.min.js" defer></script>
+    <script src="{{ site.domain }}/assets/js/global.js" defer></script>
+    <script src="{{ site.domain }}/assets/js/alpine.min.js" defer></script>
     {% endblock %}
 
 </body>
