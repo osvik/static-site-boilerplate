@@ -12,7 +12,14 @@ Built for myself with stuff I might need when starting a new project.
 
 ## Cheat sheet
 
-Start eleventy:
+Run local development server:
+
+```bash
+npm run server
 ```
-npx @11ty/eleventy --serve
+
+Generate github files:
+
+```bash
+npm run build:github
 ```
