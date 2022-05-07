@@ -23,3 +23,7 @@ Generate github files:
 ```bash
 npm run build:github
 ```
+
+Preview in Github:
+
+- [View in Github pages](https://osvik.github.io/static-site-boilerplate/)
