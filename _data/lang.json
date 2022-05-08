@@ -1,6 +1,7 @@
 {
     "en": {
         "site_name": "My site",
+        "author" : "Osvaldo Gago",
         "site_desc": [
             "<p>This is the description</p>",
             "<p class=\"demo\">Line 2</p>"
