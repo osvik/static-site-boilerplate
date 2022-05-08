@@ -6,12 +6,11 @@
 {% include "partials/metadata.njk" %}
     <title>{{ title }} &bull; {{ lang[locale].site_name }} </title>
     {% block styles %}
-    {% set css %}
-      {% include "critical.css" %}
-    {% endset %}
+    {% set css %}{% include "critical.css" %}{% endset %}
     <style>
       {{ css | cssmin | safe }}
     </style>
+
   </head>
     <link rel="preload" as="style" href="{{ site.domain }}/assets/css/reset.css" onload="this.rel='stylesheet'"  />
     <link rel="preload" as="style" href="{{ site.domain }}/assets/css/global.css" onload="this.rel='stylesheet'"  />
