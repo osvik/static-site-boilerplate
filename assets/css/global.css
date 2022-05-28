@@ -17,3 +17,23 @@ body {
     list-style-type: none;
     width: 100px;
 }
+
+/* TABLET */
+@media screen and (min-width: 600px) {
+
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    
+}
+
+/* ACCESIBILITY: HIGH CONTRAST */
+@media screen and (prefers-contrast: more) {
+
+}
+
+/* MEDIA: PRINT */
+@media print {
+    
+}
