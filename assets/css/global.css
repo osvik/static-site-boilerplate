@@ -1,11 +1,17 @@
 /*! Global styles */
 
-body {
-    background-color: aliceblue;
+:root {
+    --text-color: #000000;
+    --background-color: aliceblue;
 }
 
 [x-cloak] {
     display: none !important;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .top_menu {
