@@ -29,16 +29,33 @@ body {
 }
 
 /* TABLET */
-@media screen and (min-width: 600px) {}
+@media screen and (min-width: 600px) {
+    
+}
 
 /* DESKTOP */
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    
+}
 
 /* ACCESIBILITY: HIGH CONTRAST */
-@media screen and (prefers-contrast: more) {}
+@media screen and (prefers-contrast: more) {
+    :root {
+        --text-color: #000000;
+        --background-color: #fff;
+    }
+}
 
 /* MEDIA: PRINT */
-@media print {}
+@media print {
+    :root {
+        --text-color: #000000;
+        --background-color: #fff;
+    }
+    nav, footer {
+        display: none;
+    }
+}
 
 /* FONTS */
 
