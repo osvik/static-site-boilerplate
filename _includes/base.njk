@@ -32,7 +32,9 @@
 {{ content | safe }}
     </main>
     
-{% include "partials/footer.njk" %}
+    <footer>
+        &copy; {% year %} - {{ lang[locale].author }}
+    </footer>
 
     {% block scripts %}
     <script src="{{ site.domain }}/assets/js/global.js" defer></script>
