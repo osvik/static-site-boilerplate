@@ -10,6 +10,32 @@
     display: none !important;
 }
 
+/*! CSS Grid */
+
+body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        'header header header'
+        'main main main'
+        'footer footer footer'
+    ;
+}
+
+body > header {
+    grid-area: header;
+}
+
+body > main {
+    grid-area: main;
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+/*! Other */
+
 body {
     color: var(--text-color);
     background-color: var(--background-color);
@@ -28,17 +54,17 @@ body {
     width: 100px;
 }
 
-/* TABLET */
+/*! TABLET */
 @media screen and (min-width: 600px) {
     
 }
 
-/* DESKTOP */
+/*! DESKTOP */
 @media screen and (min-width: 1200px) {
     
 }
 
-/* ACCESIBILITY: HIGH CONTRAST */
+/*! ACCESIBILITY: HIGH CONTRAST */
 @media screen and (prefers-contrast: more) {
     :root {
         --text-color: #000000;
@@ -46,7 +72,7 @@ body {
     }
 }
 
-/* MEDIA: PRINT */
+/*! MEDIA: PRINT */
 @media print {
     :root {
         --text-color: #000000;
@@ -57,7 +83,7 @@ body {
     }
 }
 
-/* FONTS */
+/*! FONTS */
 
 /* latin-ext */
 @font-face {
